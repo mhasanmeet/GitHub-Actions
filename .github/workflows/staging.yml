@@ -17,4 +17,4 @@ jobs:
         server: ftp.mhasansoft.com
         username: FTP_USERNAME
         password: FTP_PASSWORD
-        server-dir: /home/mhasansoft/staging.mhasansoft.com
+        server-dir: /home/mhasansoft/staging.mhasansoft.com/
