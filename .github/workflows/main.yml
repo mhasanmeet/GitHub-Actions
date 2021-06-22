@@ -17,4 +17,4 @@ jobs:
         server: ftp.mhasansoft.com
         username: site@mhasansoft.com
         password: =gOw~mxR7rxG
-        server-dir: /home/mhasansoft/site.mhasansoft.com/
+        server-dir: /
