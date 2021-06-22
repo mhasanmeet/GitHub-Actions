@@ -17,4 +17,4 @@ jobs:
         server: ftp.mhasansoft.com
         username: ${{ secrets.FTP_USERNAME_SITE }}
         password: ${{ secrets.FTP_PASSWORD_SITE }}
-        server-dir: site.mhasansoft.com/
+        server-dir: /

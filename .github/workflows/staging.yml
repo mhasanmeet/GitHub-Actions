@@ -17,4 +17,4 @@ jobs:
         server: ftp.mhasansoft.com
         username: ${{ secrets.FTP_USERNAME_STAGING }}
         password: ${{ secrets.FTP_PASSWORD_STAGING }}
-        server-dir: staging.mhasansoft.com/
+        server-dir: /
