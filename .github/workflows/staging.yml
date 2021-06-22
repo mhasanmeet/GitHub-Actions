@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ftp.mhasansoft.com
-        username: FTP_USERNAME
-        password: FTP_PASSWORD
-        server-dir: /home/mhasansoft/staging.mhasansoft.com/
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /
