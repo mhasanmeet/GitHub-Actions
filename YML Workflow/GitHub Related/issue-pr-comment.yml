@@ -1,0 +1,12 @@
+on: issue_comment
+
+  issue_commented:
+    # This job only runs for issue comments
+    name: Issue comment
+    if: ${{ github.event.issue.issue_commented }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo A comment on issue $NUMBER
+        env:
+          NUMBER: ${{ github.event.issue.number }}
