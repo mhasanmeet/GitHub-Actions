@@ -63,3 +63,23 @@ jobs:
         server-dir: /staging.name.com/
 ```
 
+### GitHub Action Folder Structure
+
+```
+.github (main directory)
+    workflows   (sub directory, under this directory the workflow file is exist)
+        main.yml
+        staging.yml
+        .....
+        .....
+        .....
+```
+
+### YML
+
+What is YAMl: As it's official website defines, **YAML is a human-friendly data serialization language for all programming languages.**
+
+1. [What is CI CD](https://resources.github.com/ci-cd/)
+2. [Official Website](https://yaml.org/)
+3. [Learn GitHub Actions](https://docs.github.com/en/actions)
+4. [Learn YAML in Y minute](https://learnxinyminutes.com/docs/yaml/)
