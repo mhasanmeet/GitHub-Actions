@@ -1,5 +1,6 @@
 on: issue_comment
 
+jobs:
   issue_commented:
     # This job only runs for issue comments
     name: Issue comment
