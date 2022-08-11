@@ -1,0 +1,32 @@
+name: 🚀 Deploy to website by git push on main branch
+
+on: 
+  push: 
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: Use nodejs v16.14.0
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: "16.14.0"
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        CI=false npm run build
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: your.server.name
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /cPanel-directory/
